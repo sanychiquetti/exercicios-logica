@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h3>Calcula imc</h3>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>")
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+    }
+
+    var imcSany = calculaImc(1.61, 53);
+    var imcMarco = calculaImc(1.77, 75);
+    var somaImc = imcSany + imcMarco;
+
+    mostra("A soma dos IMC´s é: " + Math.round(somaImc));
+    
+</script>

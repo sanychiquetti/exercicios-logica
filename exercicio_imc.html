@@ -1,0 +1,23 @@
+<meta charset = "UTF-8" />
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc; // com o return ele vai guardar o valor da variável
+    }
+
+    var imcSany = calculaImc(1.61, 53);
+    var imcMarco = calculaImc(1.77, 78);
+
+    mostra("O meu imc é de " + Math.round(imcSany));
+    mostra("O imc do Marco é de " + Math.round(imcMarco));
+
+</script>
